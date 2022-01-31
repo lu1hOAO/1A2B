@@ -17,7 +17,7 @@
 除了做玩家猜電腦版，也稍微分析了一下電腦猜玩家版><(詳細程式碼可以看電腦猜.py那個檔案)目前網路上找到的資料都是說電腦最多猜6次可以猜中(最好的演算法是5.21次)
 那電腦猜玩家大概是甚麼流程呢？用下圖來看看！
 ![圖片2](https://user-images.githubusercontent.com/91367098/151729166-a387e9fe-b3a9-4a4b-afb9-d74e0af8739c.png)
-```
+```.py
 #這邊是把電腦猜測的四位數的四位數拆成4個位數
 def digit4(n):\<br>
     n1 = int(n/1000)
@@ -26,7 +26,7 @@ def digit4(n):\<br>
     n4 = n - n1*1000 - n2*100 - n3*10
     return (n1, n2, n3, n4)
 ```
-```
+```.py
 #這邊是剔除重複數字，因為我們一開始的答案庫沒有排除所有重複
 def isvalid(n):
     d = digit4(n)
@@ -34,7 +34,7 @@ def isvalid(n):
     if d[0]==d[1] or d[0]==d[2] or d[0]==d[3] or d[1]==d[2] or d[1]==d[3] or d[2]==d[3]: return False
     return True
  ```
- ```
+ ```.py
  #下面三個函數就是開始找下一組答案囉
 def checkab(m, n):
     a, b = 0, 0
