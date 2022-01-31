@@ -67,3 +67,4 @@ numlist = []
 for i in range(1234, 9877):
     if isvalid(i): numlist.append(i)
 ```
+最後電腦猜測的[程式碼來源](https://wifiboy.club/topic/17/micropython-%E7%8C%9C%E6%95%B8%E5%AD%97-1a2b-%E8%AE%93%E9%9B%BB%E8%85%A6%E7%8C%9C%E4%BA%BA%E5%BF%83%E8%A3%A1%E6%83%B3%E7%9A%84%E5%9B%9B%E4%BD%8D%E6%95%B8%E5%AD%97)
